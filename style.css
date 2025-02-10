@@ -6,19 +6,12 @@
 }
 
   body{
-    background-color: #3a3a3a;
-    color: #fff;
-    font-family: sans-serif;
-    font-weight: 900;
-    font-size: 16px;
-  
+    background-color: #ff868a;
 
     & main{
-      /* display flex siempre los une en horizontal */
+        /* display flex siempre los une en horizontal */
       display: flex;
       /* uno encima del otro */
-      flex-direction: column;
-      /* alineando en el centro */
       justify-content: center;
       align-items: center;
       /* que main crezca para ajustarse a toda la pantalla */
