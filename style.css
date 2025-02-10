@@ -5,21 +5,18 @@
     box-sizing: border-box;
 }
 
-  body{
-    background-color: #ff868a;
-
-    & main{
-        /* display flex siempre los une en horizontal */
-      display: flex;
-      /* uno encima del otro */
-      justify-content: center;
-      align-items: center;
-      /* que main crezca para ajustarse a toda la pantalla */
-      height: 100vh;
-      /* que tenga de 600 en adelante y que tenga una horientacion horizontal, si no, no le haria caso */
-      @media screen and (min-width: 600px) and (orientation: landscape) {
-        flex-direction: row;
-        gap: 50px
-      }
+body {
+    & main {
+        background-color: #ff868a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+        @media screen and (min-width: 600px) {
+            img {
+                width: 70%;
+            }
+        }
     }
-  }
+}
