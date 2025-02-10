@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+  body{
+    background-color: #3a3a3a;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+  
+
+    & main{
+      /* display flex siempre los une en horizontal */
+      display: flex;
+      /* uno encima del otro */
+      flex-direction: column;
+      /* alineando en el centro */
+      justify-content: center;
+      align-items: center;
+      /* que main crezca para ajustarse a toda la pantalla */
+      height: 100vh;
+      /* que tenga de 600 en adelante y que tenga una horientacion horizontal, si no, no le haria caso */
+      @media screen and (min-width: 600px) and (orientation: landscape) {
+        flex-direction: row;
+        gap: 50px
+      }
+    }
+  }
